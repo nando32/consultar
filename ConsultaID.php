@@ -3,7 +3,7 @@
 include "conexion.php";
 $Id=$_POST["ID"];
 
-$sql="SELECT * FROM servicios where Id_Servicios=$Id";
+$sql="SELECT * FROM servicios where id_Servicios=$Id";
 $result=mysqli_query($conn,$sql);
 $datos= array();
 if($result){
